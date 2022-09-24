@@ -1,0 +1,20 @@
+@keyframes portrait-mask-fade-in {
+  from {
+    background-color: $cardFooterColor;
+    opacity: 0%;
+  }
+
+  to {
+    background-color: $cardFooterColor;
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-out  {
+  from {
+    right: -190px;
+  }
+  to {
+    right: 0px;
+  }
+}

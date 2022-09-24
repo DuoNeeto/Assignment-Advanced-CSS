@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+  .article-vraag-2 {
+    // De hoofd klasse moet erbij, anders werken de Grid-aanpassingen niet!
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      border: 0px solid red;
+
+      .photo-grid-cell {
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-vraag-2 {
+    // De hoofd klasse moet erbij, anders werken de Grid-aanpassingen niet!
+    .photo-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      border: 0px solid blue;
+
+      .photo-grid-cell {
+        min-width: 150px;
+      }
+    }
+  }
+}

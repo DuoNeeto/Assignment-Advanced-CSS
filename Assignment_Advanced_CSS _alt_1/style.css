@@ -1,0 +1,362 @@
+/* IMPORTS */
+.article-vraag-1 {
+  border: 0px solid white;
+  width: 300px;
+  height: 420px;
+  border-radius: 10px;
+  display: grid;
+  grid-template: 65% 12% 23%/100%;
+}
+.article-vraag-1 .header-vraag-1 {
+  grid-area: 1/1/2/2;
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+.article-vraag-1 .header-vraag-1 .header-text-vraag-1 {
+  padding: 2.6em;
+  line-height: 1.8em;
+  color: darkslategray;
+  font-size: 1em;
+}
+.article-vraag-1 .main-vraag-1 {
+  grid-area: 2/1/3/2;
+  background-color: #686de0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: none;
+}
+.article-vraag-1 .main-vraag-1 .picture-box-vraag-1 {
+  margin-top: -48px;
+}
+.article-vraag-1 .main-vraag-1 .picture-box-vraag-1 .main-vraag-1-cirkel {
+  border: 5px solid #fff;
+  height: 82px;
+  width: 82px;
+  border-radius: 50% 50%;
+  position: relative;
+  overflow: hidden;
+}
+.article-vraag-1 .main-vraag-1 .picture-box-vraag-1 .main-vraag-1-cirkel .portrait-pic {
+  width: 85px;
+  margin-top: -10px;
+  position: absolute;
+}
+.article-vraag-1 .footer-vraag-1 {
+  grid-area: 3/1/4/2;
+  background-color: #686de0;
+  border-radius: 0px 0px 10px 10px;
+  height: 100%;
+}
+.article-vraag-1 .footer-vraag-1 .medewerker-naam {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0.6em;
+  font-size: 1.03em;
+}
+.article-vraag-1 .footer-vraag-1 .my-website {
+  color: #b2b3ce;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.article-vraag-2 {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  border: 0px solid green;
+  width: 100%;
+}
+.article-vraag-2 .photo-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+.article-vraag-2 .photo-grid .photo-grid-cell {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  border-radius: 8px;
+}
+.article-vraag-2 .photo-grid .photo-grid-cell .photo-grid-pic {
+  width: 100%;
+  border-radius: 8px;
+}
+.article-vraag-2 .photo-grid .photo-grid-cell .photo-mask {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #686de0;
+  opacity: 0%;
+  border: none;
+  z-index: 2;
+  border-radius: 8px;
+}
+.article-vraag-2 .photo-grid .photo-grid-cell .photo-mask:hover {
+  animation-name: portrait-mask-fade-in;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  transition-property: opacity;
+}
+.article-vraag-2 .photo-grid .photo-grid-cell .photo-mask .photo-mask-button {
+  z-index: 3;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 50%;
+  justify-content: center;
+  background-color: #1b21db;
+  border: none;
+  color: #fff;
+}
+
+img {
+  width: 20px;
+}
+
+* {
+  margin: 0;
+}
+
+/* VRAAG 3 */
+.article-vraag-3 {
+  margin-top: 14px;
+  width: 220px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+}
+.article-vraag-3 .social-media {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "blog" "facebook" "twitter" "github" "linkedin";
+  gap: 0px;
+  margin: 0px;
+}
+.article-vraag-3 .social-media .blog {
+  grid-area: blog;
+}
+.article-vraag-3 .social-media .blog button {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  height: 36px;
+  text-decoration: underline;
+  align-items: center;
+  color: white;
+  background-color: #e17b77;
+  font-size: 12px;
+  width: 220px;
+  position: relative;
+  right: -190px;
+  transition-duration: 800ms;
+  transition-property: right;
+  animation-fill-mode: backwards;
+  animation-name: slide-out;
+  animation-iteration-count: 0;
+}
+.article-vraag-3 .social-media .blog button .button-text {
+  display: flex;
+  margin: 0 auto;
+}
+.article-vraag-3 .social-media .blog button:hover {
+  position: absolute;
+  right: 0px;
+}
+.article-vraag-3 .social-media .facebook {
+  grid-area: facebook;
+}
+.article-vraag-3 .social-media .facebook button {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  height: 36px;
+  text-decoration: underline;
+  align-items: center;
+  color: white;
+  background-color: #3b5998;
+  font-size: 12px;
+  width: 220px;
+  position: relative;
+  right: -190px;
+  transition-duration: 800ms;
+  transition-property: right;
+  animation-fill-mode: backwards;
+  animation-name: slide-out;
+  animation-iteration-count: 0;
+}
+.article-vraag-3 .social-media .facebook button .button-text {
+  display: flex;
+  margin: 0 auto;
+}
+.article-vraag-3 .social-media .facebook button:hover {
+  position: absolute;
+  right: 0px;
+}
+.article-vraag-3 .social-media .twitter {
+  grid-area: twitter;
+}
+.article-vraag-3 .social-media .twitter button {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  height: 36px;
+  text-decoration: underline;
+  align-items: center;
+  color: white;
+  background-color: #00aced;
+  font-size: 12px;
+  width: 220px;
+  position: relative;
+  right: -190px;
+  transition-duration: 800ms;
+  transition-property: right;
+  animation-fill-mode: backwards;
+  animation-name: slide-out;
+  animation-iteration-count: 0;
+}
+.article-vraag-3 .social-media .twitter button .button-text {
+  display: flex;
+  margin: 0 auto;
+}
+.article-vraag-3 .social-media .twitter button:hover {
+  position: absolute;
+  right: 0px;
+}
+.article-vraag-3 .social-media .github {
+  grid-area: github;
+}
+.article-vraag-3 .social-media .github button {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  height: 36px;
+  text-decoration: underline;
+  align-items: center;
+  color: white;
+  background-color: #333;
+  font-size: 12px;
+  width: 220px;
+  position: relative;
+  right: -190px;
+  transition-duration: 800ms;
+  transition-property: right;
+  animation-fill-mode: backwards;
+  animation-name: slide-out;
+  animation-iteration-count: 0;
+}
+.article-vraag-3 .social-media .github button .button-text {
+  display: flex;
+  margin: 0 auto;
+}
+.article-vraag-3 .social-media .github button:hover {
+  position: absolute;
+  right: 0px;
+}
+.article-vraag-3 .social-media .linkedin {
+  grid-area: linkedin;
+}
+.article-vraag-3 .social-media .linkedin button {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  height: 36px;
+  text-decoration: underline;
+  align-items: center;
+  color: white;
+  background-color: #007bb6;
+  font-size: 12px;
+  width: 220px;
+  position: relative;
+  right: -190px;
+  transition-duration: 800ms;
+  transition-property: right;
+  animation-fill-mode: backwards;
+  animation-name: slide-out;
+  animation-iteration-count: 0;
+}
+.article-vraag-3 .social-media .linkedin button .button-text {
+  display: flex;
+  margin: 0 auto;
+}
+.article-vraag-3 .social-media .linkedin button:hover {
+  position: absolute;
+  right: 0px;
+}
+
+@keyframes portrait-mask-fade-in {
+  from {
+    background-color: #686de0;
+    opacity: 0%;
+  }
+  to {
+    background-color: #686de0;
+    opacity: 100%;
+  }
+}
+@keyframes slide-out {
+  from {
+    right: -190px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .article-vraag-2 .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 0px solid red;
+  }
+  .article-vraag-2 .photo-grid .photo-grid-cell {
+    min-width: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .article-vraag-2 .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 0px solid blue;
+  }
+  .article-vraag-2 .photo-grid .photo-grid-cell {
+    min-width: 150px;
+  }
+}
+/*UNIVERSAL*/
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Basis structuur*/
+body {
+  background-color: #c3cfe2;
+}
+body .body-align {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  border: 0px solid red;
+  width: 100%;
+}
+body .body-align .body-justify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+  border: 0px solid yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

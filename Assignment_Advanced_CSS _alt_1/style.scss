@@ -1,0 +1,36 @@
+/* IMPORTS */
+@import "./partials/variables"; //Variables altijd bovenaan zodat ze in geheugen zijn, wanneer ze aangeroepen worden.
+@import "./partials/mixins";
+@import "./partials/vraag-1";
+@import "./partials/vraag-2";
+@import "./partials/vraag-3";
+@import "./partials/keyframes";
+@import "./partials/media-queries";
+
+/*UNIVERSAL*/
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Basis structuur*/
+// De volledige content wordt zowel horizontaal als verticaal gecentreerd.
+body {
+  background-color: #c3cfe2;
+  .body-align {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border: 0px solid red;
+    width: 100%;
+
+    .body-justify {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 10px auto;
+      border: 0px solid yellow;
+    }
+  }
+}

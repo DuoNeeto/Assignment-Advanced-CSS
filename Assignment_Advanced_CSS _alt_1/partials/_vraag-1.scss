@@ -1,0 +1,76 @@
+//De witte bovenkant van de badge.
+.article-vraag-1 {
+  border: 0px solid white;
+  width: 300px;
+  height: 420px;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template: 65% 12% 23% / 100%;
+
+  .header-vraag-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: $white;
+    border-radius: 10px 10px 0px 0px;
+
+    .header-text-vraag-1 {
+      padding: 2.6em;
+      line-height: 1.8em;
+      color: darkslategray;
+      font-size: 1em;
+    }
+  }
+
+  //Het stuk met de middenlijn en pasfoto.
+  .main-vraag-1 {
+    grid-area: 2 / 1 /3 / 2;
+    background-color: $cardFooterColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: none;
+
+    .picture-box-vraag-1 {
+      margin-top: -48px;
+
+      .main-vraag-1-cirkel {
+        border: 5px solid $white;
+        height: $pictureSize;
+        width: $pictureSize;
+        border-radius: $borderRadiusCircle;
+        position: relative;
+        overflow: hidden; //Voor het verbergen van de rechte hoeken van de image.
+
+        .portrait-pic {
+          width: 85px;
+          margin-top: -10px;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  //Onderste gedeelte van de kaart met tekst.
+  .footer-vraag-1 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: $cardFooterColor;
+    border-radius: 0px 0px 10px 10px;
+    height: 100%;
+
+    .medewerker-naam {
+      color: $white;
+      display: flex;
+      justify-content: center;
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin: 0.6em;
+      font-size: 1.03em;
+    }
+    .my-website {
+      color: #b2b3ce;
+      display: flex;
+      justify-content: center;
+      margin-bottom: -10px;
+    }
+  }
+}

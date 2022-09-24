@@ -1,0 +1,55 @@
+img {
+  width: 20px;
+}
+
+* {
+  margin: 0;
+}
+
+/* VRAAG 3 */
+.article-vraag-3 {
+  margin-top: 14px;
+  width: 220px;
+
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+
+  .social-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "blog"
+      "facebook"
+      "twitter"
+      "github"
+      "linkedin";
+    gap: 0px;
+    margin: 0px;
+
+    .blog {
+      grid-area: blog;
+      @include complete-button(#e17b77);
+    }
+
+    .facebook {
+      grid-area: facebook;
+      @include complete-button(#3b5998);
+    }
+    .twitter {
+      grid-area: twitter;
+      @include complete-button(#00aced);
+    }
+    .github {
+      grid-area: github;
+      @include complete-button(#333);
+    }
+
+    .linkedin {
+      grid-area: linkedin;
+      @include complete-button(#007bb6);
+    }
+  }
+}
